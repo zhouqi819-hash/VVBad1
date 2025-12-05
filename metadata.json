@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Copy of 蓝视智寻控制中心",
+  "description": "蓝视智寻-鞋位导正与全域归置系统控制界面，具备远程遥控、数字孪生监控及AI辅助诊断功能。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
