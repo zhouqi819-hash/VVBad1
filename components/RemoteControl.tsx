@@ -416,7 +416,8 @@ export const RemoteControl: React.FC<RemoteControlProps> = ({ onStateChange, cur
                 {log.map((entry, i) => (
                     <div key={i} className="flex gap-2 border-l-2 border-slate-700 pl-2 py-1">
                         <span className="text-slate-500">{new Date().toLocaleTimeString()}</span>
-                        <span className="text-cyan-400">></span>
+                        {/* 修复：将 > 转义为 &gt; */}
+                        <span className="text-cyan-400">&gt;</span>
                         <span className="text-slate-300">{entry}</span>
                     </div>
                 ))}

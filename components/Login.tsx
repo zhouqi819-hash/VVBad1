@@ -57,7 +57,8 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
             <div className="group/input">
               <label className="block text-cyan-400/70 text-xs font-mono mb-2 flex justify-between">
                 <span>操作员 ID (OPERATOR ID)</span>
-                <span className="opacity-0 group-focus-within/input:opacity-100 transition-opacity text-cyan-500">>_ READY</span>
+                {/* 修复：将 > 转义为 &gt; */}
+                <span className="opacity-0 group-focus-within/input:opacity-100 transition-opacity text-cyan-500">&gt;_ READY</span>
               </label>
               <div className="relative">
                 <input 
